@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario Bross</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/stylo.css" />
+    <link
+    rel="shortcut icon"
+    href="./img/logoNintendo.png"
+    type="image/x-icon"
+  />
+  </head>
+  <body>
+    <section class="parallax">
+        <img src="./img/fondoParallax.png" id="fondoPara" class="para" />
+        <img src="./img/enemy_parallax.png" id="enemy" class="para" />
+        <img src="./img/principales_parallax.png" id="principales" class="para"/>
+        <img src="./img/superMarioTexto_parallax.png" id="textoMario" class="para"/>
+        <img src="./img/bloqueDerechoChico_parallax.png" id="bloqueDerChico" class="para"/>
+        <img src="./img/bloqueIzquierdoGrande_parallax.png" id="bloqueIzqGrande" class="para"/>
+        <img src="./img/bloqueDerechoGrande_parallax.png" id="bloqueDerGrande" class="para"/>
+        <img src="./img/monedas_parallax.png" id="monedas" class="para"/>
+        <img src="./img/nubeIzquierdaAbajo_parallax.png" id="nubeIzqAbajo" class="para"/>
+        <img src="./img/nubeIzquierdaArriba_parallax.png" id="nubeIzqArriba"class="para" />
+        <img src="./img/fantasmaIzquierdo_parallax.png" id="fantasma" class="para"/>
+      </section>
+    <!-- #region ENCABEZADO -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="./img/logoNintendo.png"
+            alt=""
+            class="nav__logo-img"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Mundo Mario</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Acerca</a>
+            </li>
+            <li class="nav__item">
+              <a href="#trick" class="nav__link">Mario Cars</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">Nuevos Personajes</a>
+            </li>
+            <a href="#" class="button button--ghost">Inicio</a>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <img src="./img/plantaMenu.png" alt="" class="nav__img" />
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- #endregion -->
+    <!-- #region Principal-->
+    <main class="main">
+      <!--Menu inicial-->
+      <section class="home container" id="home">
+        <div class="swiper home-swiper">
+          <div class="swiper-wrapper">
+            <!--1 2 3-->
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="./img/enemiySeccionUno.png"
+                    alt=""
+                    class="home__img"
+                  />
+                  <div class="home__indicator"></div>
+
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Bowser</h4>
+                    <span class="home__details-subtitle">
+                        El rey de los Koopas.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">El enemigo más aterrador</h3>
+                  <h1 class="home__title">
+                    CONOCE A <br />
+
+                    BOWSER <br />
+                    REY DE KOOPAS
+                  </h1>
+                  <p class="home__description">
+                    El rey de los Koopas. Bowser es el archienemigo de Mario y siempre está causando estragos en el Reino Champiñón. Bowser cuenta con muchos secuaces que incluyen a los Koopas, Goombas, Bill Bala y Shy Guys.
+                  </p>
+
+                  <div class="home__buttons">
+                    <a href="#" class="button"> Reservar ahora</a>
+                    <a href="#" class="button--link button--flex">
+                      Audio grabado
+                      <i class="bx bx-right-arrow-alt button__icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="./img/marioiSeccionUno.png"
+                    alt=""
+                    class="home__img"
+                  />
+                  <div class="home__indicator"></div>
+
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Super Mario Bross</h4>
+                    <span class="home__details-subtitle">
+                      Elije al personaje principal de la saga</span
+                    >
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">El personaje mas aventurero</h3>
+                  <h1 class="home__title">
+                  CONOCE A   <br />
+
+                    MARIO <br />
+                    BROSS!!
+                  </h1>
+                  <p class="home__description">
+                    Mario es un fontanero italiano que reside en el Reino Champiñón, cuyas aventuras generalmente se centran en rescatar a la Princesa Peach del villano Bowser. 
+                  </p>
+
+                  <div class="home__buttons">
+                    <a href="#" class="button">Book Now</a>
+                    <a href="#" class="button--link button--flex"
+                      >Track Record
+                      <i class="bx bx-right-arrow-alt button__icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div class="home__content grid">
+                <div class="home__group">
+                  <img
+                    src="./img/luigiSeccionUno.png"
+                    alt=""
+                    class="home__img"
+                  />
+                  <div class="home__indicator"></div>
+
+                  <div class="home__details-img">
+                    <h4 class="home__details-title">Captain Sem</h4>
+                    <span class="home__details-subtitle"
+                      >Veteran Spooky Ghost</span
+                    >
+                  </div>
+                </div>
+
+                <div class="home__data">
+                  <h3 class="home__subtitle">LUIGI JUNTO A MARIO SON INVENCIBLES</h3>
+                  <h1 class="home__title">
+                    CONOCE A  <br />
+
+                    LUIGI <br />
+                    BROSS!!
+                  </h1>
+                  <p class="home__description">
+                    Luigi es amable, pero un poco de nervioso, especialmente si hay fantasmas por ahí. Sin embargo, sus habilidades igualan las habilidades de Mario, así que cuando estos hermanos se unen, no hay nada que no puedan lograr.
+                  </p>
+
+                  <div class="home__buttons">
+                    <a href="#" class="button">Book Now</a>
+                    <a href="#" class="button--link button--flex"
+                      >Track Record
+                      <i class="bx bx-right-arrow-alt button__icon"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!--Categirias-->
+      <section class="section category">
+        <h2 class="section__title">
+          Colecciona las nuevas<br />
+          Apariencias
+        </h2>
+
+        <div class="category__container container grid">
+          <div class="category__data">
+            <img
+              src="./img/marioFireSeccionDos.png"
+              alt=""
+              class="category__img"
+            />
+            <h3 class="category__title">Mario Fire</h3>
+            <p class="category__description">
+              Colecciona la nueva apariencia de Mario.
+            </p>
+          </div>
+
+          <div class="category__data">
+            <img
+              src="./img/luigiCatSeccionDos.png"
+              alt=""
+              class="category__img"
+            />
+            <h3 class="category__title">Luigi Cat</h3>
+            <p class="category__description">
+              Colecciona la nueva apariencia de Luigi.
+            </p>
+          </div>
+
+          <div class="category__data">
+            <img
+              src="./img/princesaSeccionDos.png"
+              alt=""
+              class="category__img"
+            />
+            <h3 class="category__title">Peach Princess</h3>
+            <p class="category__description">
+                Colecciona la nueva apariencia de Princess Peach.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Acerca de-->
+      <section class="section about" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Acerca de Mario Bros
+              <br />
+              Nintendo
+            </h2>
+            <p class="about__description">
+                Mario Bros. es un videojuego de arcade desarrollado por Nintendo en el año 1983. Fue creado por Shigeru Miyamoto. Ha sido presentado como un minijuego en la serie de Super Mario Advance y otros juegos.
+            </p>
+            <a href="#" class="button"> Saber más</a>
+          </div>
+
+          <img src="./img/marioCaraSeccionTres.png" alt="" class="aboutx__img" />
+        </div>
+      </section>
+      <!--Mario Cars-->
+      <section class="section trick" id="trick">
+        <h2 class="section__title">Mario Cars</h2>
+
+        <div class="trick__container container grid">
+          <div class="trick__content">
+            <img
+              src="./img/enemyCarSeccionCuatro.png"
+              alt=""
+              class="trick__img"
+            />
+            <h3 class="trick__title">Bowser</h3>
+            <span class="trick__subtitle">Rey de los Koopas</span>
+            <span class="trick__price">$11.99</span>
+            <button class="button trick__button">
+              <i class="bx bx-cart-alt trick__icon"></i>
+            </button>
+          </div>
+
+          <div class="trick__content">
+            <img
+              src="./img/hongoCarSeccionCuatro.png"
+              alt=""
+              class="trick__img"
+            />
+            <h3 class="trick__title">Toad</h3>
+            <span class="trick__subtitle">Hongo</span>
+            <span class="trick__price">$8.99</span>
+            <button class="button trick__button">
+              <i class="bx bx-cart-alt trick__icon"></i>
+            </button>
+          </div>
+
+          <div class="trick__content">
+            <img
+              src="./img/luigiCarSeccionCuatro.png"
+              alt=""
+              class="trick__img"
+            />
+            <h3 class="trick__title">Luigi</h3>
+            <span class="trick__subtitle">Hermano de Mario Bross</span>
+            <span class="trick__price">$15.99</span>
+            <button class="button trick__button">
+              <i class="bx bx-cart-alt trick__icon"></i>
+            </button>
+          </div>
+
+          <div class="trick__content">
+            <img
+              src="./img/princesaCarSeccionCuatro.png"
+              alt=""
+              class="trick__img"
+            />
+            <h3 class="trick__title">Peach</h3>
+            <span class="trick__subtitle">Princesa</span>
+            <span class="trick__price">$7.99</span>
+            <button class="button trick__button">
+              <i class="bx bx-cart-alt trick__icon"></i>
+            </button>
+          </div>
+
+          <div class="trick__content">
+            <img
+              src="./img/marioCarSeccionCuatro.png"
+              alt=""
+              class="trick__img"
+            />
+            <h3 class="trick__title">Mario Bross</h3>
+            <span class="trick__subtitle">Fontanero Italiano</span>
+            <span class="trick__price">$19.99</span>
+            <button class="button trick__button">
+              <i class="bx bx-cart-alt trick__icon"></i>
+            </button>
+          </div>
+
+          <div class="trick__content">
+            <img
+              src="./img/dinoCarSeccionCuatro.png"
+              alt=""
+              class="trick__img"
+            />
+            <h3 class="trick__title">Yoshi </h3>
+            <span class="trick__subtitle">Dinosaurio</span>
+            <span class="trick__price">$17.99</span>
+            <button class="button trick__button">
+              <i class="bx bx-cart-alt trick__icon"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--Descuentos-->
+      <section class="section discount">
+        <div class="discount__container container grid">
+          <div class="discount__data">
+            <h2 class="discount__title">
+              50% de descuento <br />
+
+              Sobre nuevos productos
+            </h2>
+            <a href="#" class="button">Ir a nuevo</a>
+          </div>
+
+          <img src="./img/monedasSeccionCinco.png" alt="" class="discount__img" />
+        </div>
+      </section>
+      <!--Nuevos items-->
+      <section class="section new" id="new">
+        <h2 class="section__title">Nuevos Personajes</h2>
+
+        <div class="new__container container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <div class="new__content swiper-slide">
+                <div class="new__tag">Flama</div>
+                <img src="./img/flamaSeccionSeis.png" alt="" class="new__img" />
+                <h3 class="new__title">Llama Sagrada</h3>
+                <span class="new__subtitle">Personaje</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$14.99</span>
+                  <span class="new__discount">$29.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">Koopas</div>
+                <img src="./img/cacaSeccionSeis.png" alt="" class="new__img" />
+                <h3 class="new__title">Subdito de Bowser</h3>
+                <span class="new__subtitle">Personaje</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$11.99</span>
+                  <span class="new__discount">$21.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">Planta piraña</div>
+                <img src="./img/plantaSeccionSeis.png" alt="" class="new__img" />
+                <h3 class="new__title">Planta Carnivora</h3>
+                <span class="new__subtitle">Personaje</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$4.99</span>
+                  <span class="new__discount">$9.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">Lakitu</div>
+                <img src="./img/nubeSeccionSeis.png" alt="" class="new__img" />
+                <h3 class="new__title">Nube</h3>
+                <span class="new__subtitle">Personaje</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$24.99</span>
+                  <span class="new__discount">$44.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">Boo</div>
+                <img src="./img/fantasmaSeccionSeis.png" alt="" class="new__img" />
+                <h3 class="new__title">Fantasma</h3>
+                <span class="new__subtitle">Personaje</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$5.99</span>
+                  <span class="new__discount">$12.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+
+              <div class="new__content swiper-slide">
+                <div class="new__tag">Bob-omb</div>
+                <img src="./img/bombaSeccionSeis.png" alt="" class="new__img" />
+                <h3 class="new__title">Bomba</h3>
+                <span class="new__subtitle">Personaje</span>
+
+                <div class="new__prices">
+                  <span class="new__price">$7.99</span>
+                  <span class="new__discount">$14.99</span>
+                </div>
+
+                <button class="button new__button">
+                  <i class="bx bx-cart-alt new__icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Suscribirse-->
+      <section class="section newsletter">
+        <div class="newsletter__container container">
+          <h2 class="section__title">Our Newsletter</h2>
+          <p class="newsletter__description">
+            Promotion new products and sales. Directly to your inbox
+          </p>
+
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="newsletter__input"
+            />
+            <button class="button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--Pie de pagina-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img src="assets/img/logo.png" alt="" class="footer__logo-img" />
+            Halloween
+          </a>
+
+          <p class="footer__description">
+            Enjoy the scariest night <br />
+            of your life.
+          </p>
+
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">About</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Features</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">News</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Services</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Discounts</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Shipping mode</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">About us</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Our mision</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <span class="footer__copy">&#169; Halloween page</span>
+
+      <img src="./img/marioCatSeccionSiete.png" alt="" class="footer__img-one" />
+      <img src="./img/balaSeccionSiete.png" alt="" class="footer__img-two" />
+    </footer>
+    <!-- #endregion -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--Scroll para que se revelen los elementos de forma suave-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!--Deslizar elementos en una lista-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+
+    <script src="./scrip.js"></script>
+  </body>
+</html>
